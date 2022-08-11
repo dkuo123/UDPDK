@@ -60,7 +60,7 @@ The list of hardware officially supported by DPDK is available [here](https://co
 ## Install Dependencies
 
 UDPDK requires:
-- DPDK 20.05
+- DPDK 20.05 --- it doesn't compile in my env, softlink to f-stack dev branch of 20.11.0
 - inih (any)
 
 They are already included in this repository as submodules, so pull them:
@@ -110,7 +110,7 @@ UDPDK builds into a static library, which eventually needs to be linked with the
 cd udpdk
 export RTE_TARGET=/home/archy/UDPDK/deps/dpdk/build
 make
-sudo make install
+sudo make install  --- /usr/local/lib/ &  /usr/local/include
 ```
 
 ## API
