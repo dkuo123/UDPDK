@@ -88,7 +88,7 @@ From the menu, do the following:
 
 **AWS EC2**
 ```
-the original version of 20.05.0 doesn't build somehow, I'm linking f-stack dev branch of 20.11.0 to make it work. latest stable version is 21.11.1
+the original version of 20.05.0 doesn't build somehow, I'm linking f-stack dev branch of 20.11.0 to make it work. latest stable version is 21.11.1, but it doesn't provide igb_uio.ko for AWS box anymore.
 
 cd deps/dpdk
 meson -Denable_kmods=true build
