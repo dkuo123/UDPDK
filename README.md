@@ -85,6 +85,13 @@ From the menu, do the following:
 > :warning: **If you use the VFIO driver**, then you must enable the IOMMU in your system.  
 > To enable it, open `/etc/default/grub`, add the flag `intel_iommu=on` in `GRUB_CMDLINE_LINUX_DEFAULT`, then `sudo update-grub` and finally reboot.
 
+**AWS EC2**
+```
+cd deps/dpdk
+meson -Denable_kmods=true build
+ninja -C build
+```
+
 **inih**
 
 [inih](https://github.com/benhoyt/inih) is used for convenience to parse `.ini` configuration files.
