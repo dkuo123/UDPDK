@@ -108,6 +108,7 @@ UDPDK builds into a static library, which eventually needs to be linked with the
 
 ```
 cd udpdk
+export RTE_TARGET=/home/archy/UDPDK/deps/dpdk/build
 make
 sudo make install
 ```
