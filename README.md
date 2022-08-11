@@ -85,8 +85,11 @@ From the menu, do the following:
 > :warning: **If you use the VFIO driver**, then you must enable the IOMMU in your system.  
 > To enable it, open `/etc/default/grub`, add the flag `intel_iommu=on` in `GRUB_CMDLINE_LINUX_DEFAULT`, then `sudo update-grub` and finally reboot.
 
+
 **AWS EC2**
 ```
+the original version of 20.05.0 doesn't build somehow, I'm linking f-stack dev branch of 20.11.0 to make it work. latest stable version is 21.11.1
+
 cd deps/dpdk
 meson -Denable_kmods=true build
 ninja -C build
